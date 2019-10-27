@@ -137,7 +137,7 @@ async function start() {
     if (location.hostname === "localhost" || location.hostname === "127.0.0.1") {
         model = await tf.loadLayersModel('http://127.0.0.1:5500/model3/model.json')
     } else {
-        model = await tf.loadLayersModel('nothotdog/model3/model.json')
+        model = await tf.loadLayersModel('model3/model.json')
     }
     
     //warm up 
